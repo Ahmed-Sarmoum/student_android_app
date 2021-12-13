@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/firstname"
+            android:layout_width="140dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="5dp"
+            android:ems="10"
+            android:gravity="center|left"
+            android:hint="@string/firstname"
+            android:inputType="text"
+            android:padding="3dp"
+            android:paddingRight="8dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/lastname"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/listProduct"
+            app:layout_constraintVertical_bias="0.095"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/lastname"
+            android:layout_width="140dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="5dp"
+            android:ems="10"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:hint="@string/lastname"
+            android:inputType="text"
+            android:padding="3dp"
+            android:paddingRight="8dp"
+            android:textColorHint="#aaa"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/firstname"
+            app:layout_constraintTop_toBottomOf="@+id/fabToAddProduct"
+            app:layout_constraintVertical_bias="0.117" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/sexe"
+            android:layout_width="74dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="21dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center|left"
+            android:hint="@string/sexe"
+            android:paddingRight="8dp"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/sexeBotton"
+            app:layout_constraintHorizontal_bias="0.239"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/firstname"
+            app:layout_constraintVertical_bias="0.042" />
+
+        <RadioGroup
+            android:id="@+id/sexeBotton"
+            android:layout_width="184dp"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:layout_marginTop="21dp"
+            android:orientation="horizontal"
+            android:layout_weight="1" >
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/femele"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="femele" />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="190dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number"
+            android:gravity="start"
+            android:hint="@string/age"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/adressText"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:layout_marginLeft="10dp"
+            android:inputType="text"
+            android:gravity="start"
+            android:hint="@string/adress"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnsave"
+        android:layout_width="146dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:background="#078C0C"
+        android:text="@string/save"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8"
+        app:layout_constraintVertical_bias="0.822"
+        tools:ignore="MissingConstraints" />
+
+
+</LinearLayout>
